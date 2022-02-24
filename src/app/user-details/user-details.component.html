@@ -1,0 +1,17 @@
+<p>id: {{user.id}}</p>
+<p> name: {{user.name}} </p>
+ <p>surname: {{user.surname}}</p>
+ <p>age: {{user.age}}</p>
+<p>dateOfBirth: {{ user.dateOfBirth | date:'dd/MMM/yyyy' }}</p>
+<h3>Address:</h3>
+    <p> city: {{user.address.city}}</p>
+    <p> street: {{user.address.street}}</p>
+    <p> postalCode:{{user.address.postalCode}}</p>
+ <p> role: {{user.role}}</p>
+<p> username: {{user.username}}</p>
+ <img src='https://bit.ly/3yRngEP' class="gatto"/>
+<p> gender: {{user.gender}}</p>
+<h3>Company :{{user.companies[0].name}}</h3>
+        <p> description:{{user.companies[0].description}}</p>
+         <h3>Company :{{user.companies[1].name}}</h3>
+        <p> description:{{user.companies[1].description}}</p>
