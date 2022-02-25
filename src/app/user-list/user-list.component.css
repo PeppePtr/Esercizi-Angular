@@ -1,0 +1,28 @@
+.container-ciclo{
+display: grid;
+padding: 0.62rem;
+}
+
+.user{
+  display: inline-flex;
+  align-items: center;
+}
+
+.id{
+  width: 2.5rem;
+}
+
+.img{
+  border-radius: 0.3rem;
+  height: 3.75rem;
+  width: 4.3rem;
+}
+
+p{
+  margin-right: 0.3rem;
+}
+
+h3{
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
