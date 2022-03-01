@@ -7,6 +7,8 @@ import { User, Gender, Role } from '../models/User';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+  selectProject!:User;
+
   user:User[] = [
       {
           id: 3487,
