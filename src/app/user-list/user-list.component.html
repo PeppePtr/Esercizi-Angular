@@ -1,8 +1,1 @@
-<div class="container-ciclo"*ngFor = "let users of user">
-  <div class="user">
-        <p class="id">{{users.id}}</p>
-        <img class="img"src={{users.profilePhotoUrl}}>
-    <h3>{{users.name}} {{users.surname}} </h3>
-    <p>{{users.age}} {{users.address.city}}</p>
-  </div>
-    </div>
+<app-user-single [user]="user"></app-user-single>
