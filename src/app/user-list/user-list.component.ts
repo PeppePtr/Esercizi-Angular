@@ -7,7 +7,7 @@ import { User, Gender, Role } from '../models/User';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
-  selectProject!:User;
+  selectedProject!:User;
 
   user:User[] = [
       {
@@ -63,6 +63,13 @@ export class UserListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectProject(user:User){
+    let id;
+    id = (single: User) => single.id === user.id;
+    const idSelezionato = this.user.findIndex(id);
+    this.user.splice(idSelezionato, 1);
   }
 
 }
